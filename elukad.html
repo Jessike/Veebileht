@@ -7,10 +7,24 @@
         <link rel="stylesheet" href="CSS/elukad.css">
     </head>
     <body>
+        <div class="bg">
         <h1>Loomad ja kollid</h1>
         <ul>
             <li><a href="index.html">Tutvustus</a></li>
             <li><a href="kaks.html">Teine Leht</a></li>
+
+            <button onclick="darkMode()">Dark Mode</button>
         </ul>
+
+        
+
+
+        </div>
+        <script>
+            function darkMode() {
+                let element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
     </body>
 </html>
