@@ -1,0 +1,50 @@
+body, html {
+    color: black;
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background: url(../Images/lightBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h1 {
+    padding: 30px 50px;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 56px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+.dark-mode .bg{
+    background: url(../Images/darkBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}

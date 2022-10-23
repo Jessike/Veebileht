@@ -2,14 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>smth minecraft smth</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Minecraft Tutvustus</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/yks.css">
     </head>
     <body>
-        <h1>Homepage</h1>
-        <ul>
-            <li><a href="kaks.html">Teine Leht</a></li>
-            <li><a href="kolm.html">Kolmas leht</a></li>
-        </ul>
+        <div class="bg">
+
+            <h1>Räägime Minecraftist</h1>
+            <ul>
+                <li><a href="kaks.html">Teine Leht</a></li>
+                <li><a href="elukad.html">Elukad</a></li>
+            </ul>
+
+            <button onclick="darkMode()">Dark Mode</button>
+
+        </div>
+        <script>
+            function darkMode() {
+                let element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
     </body>
 </html>
