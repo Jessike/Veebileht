@@ -8,23 +8,81 @@
     </head>
     <body>
         <div class="bg">
-        <h1>Loomad ja kollid</h1>
-        <ul>
-            <li><a href="index.html">Tutvustus</a></li>
-            <li><a href="kaks.html">Teine Leht</a></li>
+            <h1>Kollid</h1>
+            <ul>
+                <li><a href="index.html">Tutvustus</a></li>
+                <li><a href="kaks.html">Teine Leht</a></li>
 
-            <button onclick="darkMode()">Dark Mode</button>
-        </ul>
+                <button onclick="darkMode()">Dark Mode</button>
+            </ul>
 
-        
+            <div class="koll">
+                <div class="tekst">
+                    <h2>Creeper</h2>
+                    <p>Creeper on tavaline vaenulik tegelane, kes läheneb vaikselt mängijale ja plahvatab. 
+                        Tänu oma välimusele ja suurele potentsiaalile tappa ettevaatamatuid mängijaid on Creeperitest
+                        saanud üks Minecrafti ikoonidest. 
+                        <br>
+                        Creepers on suur püssirohuallikas ja ka ainus viis enamiku muusikaplaatide hankimiseks.
+                    </p>
+                </div>
+                <div class="pilt">
+                    <img src="Images/Kollid/jeepers_greepers.jpg" alt="Creeper">
+                </div>
+            </div>
 
+            <div class="koll">
+                <div class="tekst">
+                    <h2>Zombie</h2>
+                    <p>Zombid on tavalised surnud vaenulikud kollid, kes teevad lähivõitluskahjustusi ja ründavad rühmadena. 
+                        <br>
+                        Zombid võivad ilmuda 4-liikmelistes rühmades mistahes tahkel plokil valguse tasemel 0, välja arvatud 
+                        seeneväljadel ja sügavates tumedates elupaikades.
+                        <br>
+                        Baby Zombid moodustavad 5% zombide ilmumisest. Nende käitumine on sarnane tavaliste zombidega, kuid 
+                        Baby Zombid on palju kiiremad ning saavad saavad ratsutada näiteks kanade seljas.
+                    </p>
+                </div>
+                <div class="pilt" id="creep">
+                    <img src="Images/Kollid/zombi.jpg" alt="Zombi">
+                </div>
+            </div>
+
+            <div class="koll">
+                <div class="tekst">
+                    <h2>Ämblik</h2>
+                    <p>Ämblikud on tavalised neutraalsed tegelased, kellel on ainulaadne oskus ronida seintel. 
+                        <br>
+                        Ämblikud muutuvad mängijate suhtes vaenulikuks siis, kui valgustase nende ümber on 11 või vähem, 
+                        muidu nad ei ründa, kui neid ei rünnata. 
+                        <br>
+                        Vaenulikud ämblikud näevad kuni 16 plokki, jätkates jälitamist isegi siis, kui nad puutuvad kokku hästi 
+                        valgustatud kohtadega.
+                    </p>
+                </div>
+                <div class="pilt" id="creep">
+                    <img src="Images/Kollid/spiider.jpg" alt="Ämblik">
+                </div>
+            </div>
+
+            <div class="koll">
+                <div class="tekst">
+                    <h2>Luukere</h2>
+                    <p>Luukere on tavaline elav surnu, kes on varustatud vibuga ja on vaenulik.
+                        <br>
+                        Luukered jälitavad mängijaid, keda näevad 16 ploki kauguselt, ronides treppidest, navigeerides
+                        labürintides ja ületades muid keerulisi takistusi, et jõuda laskekaugusele.
+                        <br>
+                        Nad võivad ronida mööda redeleid, kui nad on selleks sunnitud.
+                        Nende tuvastusulatus väheneb 8 plokini, kui mängija kannab luustikku.
+                    </p>
+                </div>
+                <div class="pilt" id="creep">
+                    <img src="Images/Kollid/mineral-man.jpg" alt="Luukere">
+                </div>
+            </div>
 
         </div>
-        <script>
-            function darkMode() {
-                let element = document.body;
-                element.classList.toggle("dark-mode");
-            }
-        </script>
+        <script src="JS/mode.js"></script>
     </body>
 </html>

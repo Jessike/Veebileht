@@ -9,7 +9,6 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
 
 h1 {
@@ -17,6 +16,7 @@ h1 {
     font-size: 50px;
     padding: 30px 50px;
     margin: 0;
+    text-align: center;
 }
 
 ul {
@@ -24,7 +24,7 @@ ul {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(30, 30, 30, 0.7);
 }
 
 li {
@@ -39,7 +39,7 @@ li a, button {
     text-decoration: none;
 }
 button {
-    background-color: #333;
+    background-color: rgba(30, 30, 30, 0.5);
     float: right;
 }
 
@@ -54,6 +54,5 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     color: white;
 }
