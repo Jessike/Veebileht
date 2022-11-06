@@ -41,7 +41,27 @@
                     <img class="retseptid" src="Images/meisterdamine/retseptid.jpg" alt="Retseptiraamat">
                 </div>
             </div>
+            <div class="kast">
+                <h2 class="valik">Mõned valikud lihtsamatest retseptidest</h2>
+                <div class="tab">
+                    <button class="tablinks" onclick="aken(event, 'meisterduslaud')"><img id="tabipildid" src="images/meisterdamine/tab1.jpg" alt="Meisterduslaud"></button>
+                    <button class="tablinks" onclick="aken(event, 'kirves')"><img id="tabipildid" src="images/meisterdamine/tab2.jpg" alt="Kirves"></button>
+                    <button class="tablinks" onclick=""></button>
+                    <button class="tablinks" onclick=""></button>
 
+                    <div id="meisterduslaud" class="tabcontent">
+                        <span id="sulge" onclick="this.parentElement.style.display='none'">X</span>
+                        <img id="pilt" src="images/meisterdamine/laud.jpg" alt="Pilt meisterduslaua retseptist">
+                        <p>Sobib valmistada ükskõik, missuguste puuplankudega</p>
+                    </div>
+
+                    <div id="kirves" class="tabcontent">
+                        <span id="sulge" onclick="this.parentElement.style.display='none'">X</span>
+                        <img id="pilt" src="images/meisterdamine/kirves.jpg" alt="Pilt kirve retseptist">
+                        <p>Sobib valmistada ka puiduga, kiviga, teemantitega</p>
+                    </div>    
+                </div>
+            </div>
         </div>
         <script src="JS/mode.js"></script>
     </body>

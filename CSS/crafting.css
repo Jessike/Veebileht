@@ -29,3 +29,51 @@ img {
     line-height: 1.8;
     font-size: 20px;
 }
+
+.valik {
+    float: left;
+    width: 100%;
+    padding: 50px;
+    line-height: 1.8;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+/* https://www.w3schools.com/howto/howto_js_tabs.asp */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 5px;
+  transition: 0.3s;
+}
+
+.tab button.active {
+    background-color: rgba(204, 204, 204, 0.637);
+}
+  
+
+.tabcontent {
+    display: none;
+    padding: 100px 100px;
+    border: 1px solid rgba(204, 204, 204, 0.637);
+    border-top: none;
+}
+
+#tabipildid {
+    height:50px;
+
+}
+
+#pilt {
+    width: 250px;
+    margin: 10px;
+    float: left;
+    margin-left:10%;
+
+}
