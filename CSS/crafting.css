@@ -1,0 +1,31 @@
+.kast {
+    margin: 100px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(30, 30, 30, 0.7);
+    color: white;
+}
+
+img {
+    float: right;
+}
+.seljakott {
+    height: 400px;
+}
+
+.laud {
+    height: 100px;
+    margin-top: 200px;
+}
+
+.retseptid {
+    height: 300px;
+}
+
+.tekst {
+    float: left;
+    width: 52%;
+    padding: 50px;
+    line-height: 1.8;
+    font-size: 20px;
+}
