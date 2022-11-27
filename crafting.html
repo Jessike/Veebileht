@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Minecraft Meisterdamine</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/crafting.css">
+    </head>
+    <body>
+        <div class="bg">
+            <h1>Meisterdamine</h1>
+            <ul>
+                <li><a href="index.html">Tutvustus</a></li>
+                <li><a href="elukad.html">Elukad</a></li>
+
+                <button onclick="darkMode()">Dark Mode</button>
+            </ul>
+            <div class="kast">
+                <div class="tekst">
+                    <h2>Esimene vaade seljakotti</h2>
+                    <p>
+                        Siin leiad kõik oma kaasaskantavad esemed. Avad seljakoti "E" tähte vajutades. <br>
+                        Tõenäoliselt märkad esimese asjana, et sinu karakteri pea vaatab alati sinu hiire suunas. <br>
+                        Kaasaskantav meisterduskast on ainult 2*2 ruutu suur, kuid kui sellega ehitada meisterduslaud, saab selle maha pannes 3*3 meisterduskasti.
+                    </p>
+                </div>
+                <div class="pilt">
+                    <img class="seljakott" src="Images/meisterdamine/inventory.jpg" alt="Seljakoti aken">
+                    <img class="laud" src="Images/meisterdamine/meisterduslaud.jpg" alt="Meisterduslaua tegemine">
+                </div>
+            </div>
+            <div class="kast">
+                <div class="tekst">
+                    <h2>Suuremad ehitamised</h2>
+                    <p>
+                        Siin toimub pea kõik lihtsatest ehitusretseptidest. Retseptiraamat avaneb ruudustikust vasakul asuva nupuga.
+                        Retseptiraamatu abil saab lihtsa vaevaga valmistada kõike, mida hetkel saab. Uusi retsepte saab koguda uute materjalide kätte võtmisel.
+                    </p>
+                </div>
+                <div class="pilt">
+                    <img class="retseptid" src="Images/meisterdamine/retseptid.jpg" alt="Retseptiraamat">
+                </div>
+            </div>
+            <div class="kast">
+                <h2 class="valik">Mõned valikud lihtsamatest retseptidest</h2>
+                <div class="tab">
+                    <button class="tablinks" onclick="aken(event, 'meisterduslaud')"><img id="tabipildid" src="images/meisterdamine/tab1.jpg" alt="Meisterduslaud"></button>
+                    <button class="tablinks" onclick="aken(event, 'kirves')"><img id="tabipildid" src="images/meisterdamine/tab2.jpg" alt="Kirves"></button>
+                    <button class="tablinks" onclick=""></button>
+                    <button class="tablinks" onclick=""></button>
+
+                    <div id="meisterduslaud" class="tabcontent">
+                        <span id="sulge" onclick="this.parentElement.style.display='none'">X</span>
+                        <img id="pilt" src="images/meisterdamine/laud.jpg" alt="Pilt meisterduslaua retseptist">
+                        <p>Sobib valmistada ükskõik, missuguste puuplankudega</p>
+                    </div>
+
+                    <div id="kirves" class="tabcontent">
+                        <span id="sulge" onclick="this.parentElement.style.display='none'">X</span>
+                        <img id="pilt" src="images/meisterdamine/kirves.jpg" alt="Pilt kirve retseptist">
+                        <p>Sobib valmistada ka puiduga, kiviga, teemantitega</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <script src="JS/mode.js"></script>
+    </body>
+</html>
