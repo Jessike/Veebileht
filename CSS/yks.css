@@ -1,4 +1,23 @@
-p{
-    font-family: "Marger Felt", sans-serif ;
-    
+.tekst {
+    background-color: rgba(30, 30, 30, 0.7);
+    margin: 100px;
+    padding: 10px;
+    overflow: hidden;
+    color: white;
+    font-size: 20px;
+}
+
+.img {
+    text-align: center;
+}
+.pealeht {
+    width: 800px;
+}
+.start {
+    height: 400px;
+    float: left;
+}
+.craft {
+    width: 140px;
+    height: 80px;
 }
