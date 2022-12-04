@@ -1,3 +1,10 @@
+@font-face { font-family: Minecraft-pealkiri; src: url('fonts/Minecraft_pealkiri/MinecraftTen-VGORe.ttf'); } /*https://www.fontspace.com/minecraft-ten-font-f40317*/
+@font-face { font-family: Minecraft-tekst; src: url('fonts/Minecraft_text/MinecraftItalic-R8Mo.otf'); } /*https://www.fontspace.com/minecraft-font-f28180*/
+@font-face { font-family: Galaktiline; src: url('fonts/Enchanting_table_text/SgaSmoothRegular-DO0Y3.ttf'); } /*https://www.fontspace.com/sga-smooth-font-f44602*/
+@font-face { font-family: Noto Sans; src: url('fonts/Noto_Sans/NotoSans-Regular.ttf'); } /*https://fonts.google.com/noto/specimen/Noto+Sans*/
+/* kui ma ei eksi, siis see noto sans on minecrafti official veebilehe font*/
+
+
 body, html {
     color: black;
     height: 100%;
@@ -12,11 +19,19 @@ body, html {
 }
 
 h1 {
-    font-family: "Marger Felt", sans-serif;
+    font-family: "Minecraft-pealkiri", sans-serif;
     font-size: 50px;
     padding: 30px 50px;
     margin: 0;
     text-align: center;
+}
+
+h2 {
+    font-family: "Minecraft-tekst";
+}
+
+p {
+    font-family: "Noto Sans";
 }
 
 ul {
@@ -27,7 +42,7 @@ ul {
     background-color: rgba(30, 30, 30, 0.7);
 }
 
-li {
+#nupp{
     float: left;
 }
 
@@ -55,4 +70,37 @@ li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+
+.kast{
+    margin: 100px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(30, 30, 30, 0.7);
+    color: white;
+}
+
+.kast_viimane {
+    margin: 100px;
+    margin-bottom: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(30, 30, 30, 0.7);
+    color: white;
+}
+
+.tekst {
+    float: left;
+    width: 53%;
+    padding: 50px;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+footer {
+    text-align:center;
+    padding:3px;
+    background-color: rgba(0, 0, 0, 0.733);
+    color:white;
+
 }

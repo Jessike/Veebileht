@@ -1,23 +1,46 @@
-.tekst {
-    background-color: rgba(30, 30, 30, 0.7);
-    margin: 100px;
-    padding: 10px;
-    overflow: hidden;
-    color: white;
-    font-size: 20px;
+img {
+    float:right;
 }
 
-.img {
-    text-align: center;
-}
 .pealeht {
-    width: 800px;
+    width: 680px;
 }
+
 .start {
-    height: 400px;
-    float: left;
+    height: 450px;
 }
+
 .craft {
     width: 140px;
     height: 80px;
+
+}
+
+.piltjatekst {
+    float:right;
+}
+
+.a {
+    margin-top:100px;
+}
+
+#yks{
+    font-family:Noto Sans;
+    font-size:16px;
+    line-height: 1.5;
+}
+
+.tekst2 {
+    float: left;
+    width: 30%;
+    padding: 50px;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.tekst3 {
+    float: left;
+    padding: 50px;
+    line-height: 1.8;
+    font-size: 20px;
 }

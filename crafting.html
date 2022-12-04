@@ -8,10 +8,10 @@
     </head>
     <body>
         <div class="bg">
-            <h1>Meisterdamine</h1>
+            <h1>Meisterdƒmine</h1> <!-- see ƒ on fäncy täht selle creeperi näoga A jaoks-->
             <ul>
-                <li><a href="index.html">Tutvustus</a></li>
-                <li><a href="elukad.html">Elukad</a></li>
+                <li id="nupp"><a href="index.html">Tutvustus</a></li>
+                <li id="nupp"><a href="elukad.html">Elukad</a></li>
 
                 <button onclick="darkMode()">Dark Mode</button>
             </ul>
@@ -41,8 +41,8 @@
                     <img class="retseptid" src="Images/meisterdamine/retseptid.jpg" alt="Retseptiraamat">
                 </div>
             </div>
-            <div class="kast">
-                <h2 class="valik">Mõned valikud lihtsamatest retseptidest</h2>
+            <div class="kast_viimane">
+                <h2 class="valik">Valikud lihtsamatest retseptidest</h2>
                 <div class="tab">
                     <button class="tablinks" onclick="aken(event, 'meisterduslaud')"><img id="tabipildid" src="images/meisterdamine/tab1.jpg" alt="Meisterduslaud"></button>
                     <button class="tablinks" onclick="aken(event, 'kirves')"><img id="tabipildid" src="images/meisterdamine/tab2.jpg" alt="Kirves"></button>
@@ -63,6 +63,14 @@
                 </div>
             </div>
         </div>
+        
+        <footer>
+            <p>
+                "Tehtud hoole ja armastusega" - Jessike, Valerija ja Kennar
+            </p>
+        </footer>
+        
         <script src="JS/mode.js"></script>
+        <script src="JS/crafting.js"></script>
     </body>
 </html>
