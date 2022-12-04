@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
     <head>
         <meta charset="UTF-8">
         <title>Minecraft Meisterdamine</title>
@@ -9,12 +9,12 @@
     <body>
         <div class="bg">
             <h1>Meisterdƒmine</h1> <!-- see ƒ on fäncy täht selle creeperi näoga A jaoks-->
-            <ul>
-                <li id="nupp"><a href="index.html">Tutvustus</a></li>
-                <li id="nupp"><a href="elukad.html">Elukad</a></li>
+            <menu class="nupud">
+                <li class="nupp"><a href="index.html" class="link">Tutvustus</a></li>
+                <li class="nupp"><a href="elukad.html" class="link">Elukad</a></li>
 
-                <button onclick="darkMode()">Dark Mode</button>
-            </ul>
+                <li class="nupp2"><button onclick="darkMode()">Dark Mode</button></li>
+            </menu>
             <div class="kast">
                 <div class="tekst">
                     <h2>Esimene vaade seljakotti</h2>
@@ -24,7 +24,7 @@
                         Kaasaskantav meisterduskast on ainult 2*2 ruutu suur, kuid kui sellega ehitada meisterduslaud, saab selle maha pannes 3*3 meisterduskasti.
                     </p>
                 </div>
-                <div class="pilt">
+                <div>
                     <img class="seljakott" src="Images/meisterdamine/inventory.jpg" alt="Seljakoti aken">
                     <img class="laud" src="Images/meisterdamine/meisterduslaud.jpg" alt="Meisterduslaua tegemine">
                 </div>
@@ -37,29 +37,80 @@
                         Retseptiraamatu abil saab lihtsa vaevaga valmistada kõike, mida hetkel saab. Uusi retsepte saab koguda uute materjalide kätte võtmisel.
                     </p>
                 </div>
-                <div class="pilt">
+                <div>
                     <img class="retseptid" src="Images/meisterdamine/retseptid.jpg" alt="Retseptiraamat">
                 </div>
             </div>
             <div class="kast_viimane">
                 <h2 class="valik">Valikud lihtsamatest retseptidest</h2>
                 <div class="tab">
-                    <button class="tablinks" onclick="aken(event, 'meisterduslaud')"><img id="tabipildid" src="images/meisterdamine/tab1.jpg" alt="Meisterduslaud"></button>
-                    <button class="tablinks" onclick="aken(event, 'kirves')"><img id="tabipildid" src="images/meisterdamine/tab2.jpg" alt="Kirves"></button>
-                    <button class="tablinks" onclick=""></button>
-                    <button class="tablinks" onclick=""></button>
+                    <button class="tablinks" onclick="aken(event, 'meisterduslaud')"><img class="tabipildid" src="images/meisterdamine/tab1.jpg" alt="Meisterduslaud"></button>
+                    <button class="tablinks" onclick="aken(event, 'kirves')"><img class="tabipildid" src="images/meisterdamine/tab2.jpg" alt="Kirves"></button>
+                    <button class="tablinks" onclick="aken(event, 'kirka')"><img class="tabipildid" src="Images/meisterdamine/tab3.jpg" alt="Kirka"></button>
+                    <button class="tablinks" onclick="aken(event, 'kühvel')"><img class="tabipildid" src="Images/meisterdamine/tab4.jpg" alt="Kühvel"></button>
+                    <button class="tablinks" onclick="aken(event, 'kõbla')"><img class="tabipildid" src="Images/meisterdamine/tab5.jpg" alt="Kõbla"></button>
+                    <button class="tablinks" onclick="aken(event, 'ahi')"><img class="tabipildid" src="Images/meisterdamine/tab6.jpg" alt="Ahi"></button>
+                    <button class="tablinks" onclick="aken(event, 'hoiukast')"><img class="tabipildid" src="Images/meisterdamine/tab7.jpg" alt="Hoiukast"></button>
+                    <button class="tablinks" onclick="aken(event, 'plangud')"><img class="tabipildid" src="Images/meisterdamine/tab8.jpg" alt="Plangud"></button>
+                    <!--<button class="tablinks" onclick="aken()"><img id="tabipildid" src="Images/meisterdamine/tab" alt=""></button>-->
+
+
 
                     <div id="meisterduslaud" class="tabcontent">
-                        <span id="sulge" onclick="this.parentElement.style.display='none'">X</span>
-                        <img id="pilt" src="images/meisterdamine/laud.jpg" alt="Pilt meisterduslaua retseptist">
-                        <p>Sobib valmistada ükskõik, missuguste puuplankudega</p>
+                        <img class="pilt" src="images/meisterdamine/laud.jpg" alt="Pilt meisterduslaua retseptist">
+                        <img class="sulge" src="images/meisterdamine/x.png" alt="X" onclick="this.parentElement.style.display='none'">
+                        <br>
+                        <p>Sobib valmistamiseks kõikidest puuplankudest.</p>
                     </div>
 
                     <div id="kirves" class="tabcontent">
-                        <span id="sulge" onclick="this.parentElement.style.display='none'">X</span>
-                        <img id="pilt" src="images/meisterdamine/kirves.jpg" alt="Pilt kirve retseptist">
-                        <p>Sobib valmistada ka puiduga, kiviga, teemantitega</p>
+                        <img class="pilt" src="images/meisterdamine/kirves.jpg" alt="Pilt kirve retseptist">
+                        <img class="sulge" src="images/meisterdamine/x.png" alt="X" onclick="this.parentElement.style.display='none'">
+                        <br>
+                        <p>Saab valmistada ka puidust, kividest, teemantitest.</p>
                     </div>    
+
+                    <div id="kirka" class="tabcontent">
+                        <img class="pilt" src="images/meisterdamine/kirka.jpg" alt="Pilt kirka retseptist">
+                        <img class="sulge" src="images/meisterdamine/x.png" alt="X" onclick="this.parentElement.style.display='none'">
+                        <br>
+                        <p>Saab valmistada ka puidust, kividest, teemantitest.</p>
+                    </div>
+
+                    <div id="kühvel" class="tabcontent">
+                        <img class="pilt" src="images/meisterdamine/kühvel.jpg" alt="Pilt labida retseptist">
+                        <img class="sulge" src="images/meisterdamine/x.png" alt="X" onclick="this.parentElement.style.display='none'">
+                        <br>
+                        <p>Saab valmistada ka puidust, kividest, teemantitest.</p>
+                    </div>
+
+                    <div id="kõbla" class="tabcontent">
+                        <img class="pilt" src="images/meisterdamine/kõbla.jpg" alt="Pilt kõbla retseptist">
+                        <img class="sulge" src="images/meisterdamine/x.png" alt="X" onclick="this.parentElement.style.display='none'">
+                        <br>
+                        <p>Saab valmistada ka puidust, kividest, teemantitest.</p>
+                    </div>
+
+                    <div id="ahi" class="tabcontent">
+                        <img class="pilt" src="images/meisterdamine/ahi.jpg" alt="Pilt ahju retseptist">
+                        <img class="sulge" src="images/meisterdamine/x.png" alt="X" onclick="this.parentElement.style.display='none'">
+                        <br>
+                        <p>Ahjus saab luua kaevatud metalli maagi plokkidest metallikange <br>(Tööriistade retseptidel on kasutatud rauakange.)</p>
+                    </div>
+
+                    <div id="hoiukast" class="tabcontent">
+                        <img class="pilt" src="images/meisterdamine/hoiukast.jpg" alt="Pilt hoiukasti retseptist">
+                        <img class="sulge" src="images/meisterdamine/x.png" alt="X" onclick="this.parentElement.style.display='none'">
+                        <br>
+                        <p>See võimaldab tekitada lisa ruumi asjade hoiustamiseks, miinuseks see, et ei ole kaasaskantav.</p>
+                    </div>
+
+                    <div id="plangud" class="tabcontent">
+                        <img class="pilt" src="images/meisterdamine/plangud.jpg" alt="Pilt plankude retseptist">
+                        <img class="sulge" src="images/meisterdamine/x.png" alt="X" onclick="this.parentElement.style.display='none'">
+                        <br>
+                        <p>Saab valmistada kõikidest puutüve plokkidest. </p>
+                    </div>
                 </div>
             </div>
         </div>

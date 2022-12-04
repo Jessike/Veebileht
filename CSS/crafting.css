@@ -1,7 +1,5 @@
-img {
-    float: right;
-}
 
+/* Erinevate piltide suurused*/
 .seljakott {
     height: 400px;
 }
@@ -15,7 +13,6 @@ img {
     height: 300px;
 }
 
-
 .valik {
     float: left;
     width: 100%;
@@ -23,13 +20,13 @@ img {
     line-height: 1.8;
 }
 
-
+/*Lehe allosas olevate elementide stiilid*/
+/* https://www.w3schools.com/howto/howto_js_tabs.asp */
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
 }
 
-/* https://www.w3schools.com/howto/howto_js_tabs.asp */
 .tab button {
   background-color: inherit;
   float: left;
@@ -47,20 +44,27 @@ img {
 
 .tabcontent {
     display: none;
-    padding: 100px 100px;
+    padding: 100px 0px;
     border: 1px solid rgba(204, 204, 204, 0.637);
     border-top: none;
 }
 
-#tabipildid {
+/*Väikeste tab'ide pildid*/
+.tabipildid {
     height:50px;
-
 }
 
-#pilt {
+/*Retsepti pilt*/
+.pilt {
     width: 250px;
     margin: 10px;
     float: left;
-    margin-left:10%;
+    margin-left:5%;
 
+}
+
+/*Sulgemisrist retsepti kõrval*/
+.sulge {
+    width:25px;
+    float:left;
 }

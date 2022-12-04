@@ -1,7 +1,5 @@
-img {
-    float:right;
-}
 
+/*Piltide suurused siin lehel*/
 .pealeht {
     width: 680px;
 }
@@ -13,31 +11,40 @@ img {
 .craft {
     width: 140px;
     height: 80px;
-
 }
 
 .piltjatekst {
     float:right;
 }
 
-.a {
-    margin-top:100px;
+.tekstiosa {
+    width:60%;
+    margin-top:50px;
 }
 
-#yks{
+/*Eemaldab esimeselt realt numbri, kuna seal ei peaks olema*/
+#rida {
+    list-style-type: none;
+}
+/*Nummerdatud read vajavad eraldi fonti*/
+.yks, .kaks, #rida{
     font-family:Noto Sans;
     font-size:16px;
     line-height: 1.5;
+    list-style-position: inside;
 }
 
-.tekst2 {
-    float: left;
+/* Väiksem font alapunktidele*/
+.kaks {
+    font-size:14px;
+}
+
+/*Kitsam tekstikasti laius*/
+.tekst {
     width: 30%;
-    padding: 50px;
-    line-height: 1.8;
-    font-size: 20px;
 }
 
+/*Tekstikasti laius eemaldatud*/
 .tekst3 {
     float: left;
     padding: 50px;

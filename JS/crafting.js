@@ -1,20 +1,19 @@
 function aken(evt, toode) {
-    // Declare all variables
+    // Määrab muutujad
     var i, tabcontent, tablinks;
   
-    // Get all elements with class="tabcontent" and hide them
+    // Otsib kõik "tabcontent" klassid üles ja peidab need
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Get all elements with class="tablinks" and remove the class "active"
+    // Otsib kõik "tablinks" klassi elemendid ja eemaldab klassi "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
+    // Näitab vajaminevat tab'i ja lisab selle nupule "active" klassi
     document.getElementById(toode).style.display = "block";
     evt.currentTarget.className += " active";
 } 
